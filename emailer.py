@@ -1,16 +1,18 @@
 import yagmail
 
-receiver = "to@gmail.com"
+receivers = input("Path to receiver list: ")
+
 body = [
-    
+    "test message"
 ]
 
 filename = "test.csv"
 
 yag = yagmail.SMTP("from@gmail.com")
-for i in range(5):
+
+for r in receivers:
     yag.send(
-        to = receiver,
+        to = r,
         subject = "test title",
         contents = body,
         attachments = filename,

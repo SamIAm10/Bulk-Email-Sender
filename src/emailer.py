@@ -1,11 +1,12 @@
 import yagmail
 
-# enter the email you are sending from
+# enter the Gmail you are sending from
 sender_email = "testemail6213@gmail.com"
 
 # enter the emails you are sending to
 recipient_emails = [
-    "testemail6213@gmail.com"
+    "testemail6213@gmail.com",
+	"testemail5354@gmail.com"
 ]
 
 # enter the subject of the email
@@ -17,16 +18,16 @@ body = [
     "test paragraph"
 ]
 
-# enter the filepaths of the files you want to attach
+# enter the filepaths of the files you want to attach (must prefix with "r")
 files = [
     r"Bulk-Email-Sender\src\test\test_file.txt", 
     r"Bulk-Email-Sender\src\test\test_image.jpg"
 ]
 
-yag = yagmail.SMTP(sender_email)
+email = yagmail.SMTP(sender_email)
 
 for r in recipient_emails:
-    yag.send(
+    email.send(
         to = r,
         subject = title,
         contents = body,

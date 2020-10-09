@@ -11,5 +11,3 @@ I originally created this to reach out to multiple recruiters at once with my re
 First, you must [allow less secure apps](https://myaccount.google.com/lesssecureapps) for your Google account, otherwise this won't work (you can turn this back off when you're done).
 
 Next, edit the variables in "emailer.py" to suit your needs, then run it. For the first run, it will ask you if you want to save your password. Enter "y" if you don't want to provide your password for every run.
-
-For more options and expandability, see the [yagmail documentation](https://github.com/kootenpv/yagmail).

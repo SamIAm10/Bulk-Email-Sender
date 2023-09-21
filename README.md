@@ -1,7 +1,7 @@
 # Bulk Email Sender
-A simple program that sends customized emails (with attachments) from a Gmail account to multiple recipients without showing all addresses the email was sent to (NOTE: currently this script only works if you are sending from a Gmail account).
+A simple program that uses a template and sends a customized email (with optional attachments) from a Gmail account to multiple recipients.
 
-I originally created this to reach out to multiple recruiters at once with my resume and transcript, but have repurposed the code to apply to more general use cases.
+I originally created this to reach out to multiple recruiters with my resume and transcript, but have repurposed the code to apply to more general use cases.
 
 ## Installation
 1. `pip install yagmail`
